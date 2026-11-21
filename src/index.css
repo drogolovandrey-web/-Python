@@ -1,0 +1,126 @@
+body {
+  max-width: 60rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+main > p {
+  text-indent: 1.25cm;
+}
+.practice-goal {
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #2563eb;
+  background: #eff6ff;
+  text-indent: 0;
+  break-inside: avoid;
+}
+.practice-goal strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 1.1em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid;
+  padding: 0.4rem;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+.check-results th:nth-child(2),
+.check-results td:nth-child(2) {
+  white-space: nowrap;
+}
+pre {
+  overflow-x: auto;
+  padding: 0.5rem;
+  border: 1px solid;
+}
+fieldset {
+  min-width: 0;
+  margin: 1.5rem 0;
+}
+legend {
+  max-width: 100%;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+input[type="text"],
+select {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.feedback {
+  border-top: 1px solid;
+  padding-top: 0.5rem;
+}
+@media print {
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    font:
+      14pt/1.5 "Times New Roman",
+      serif;
+  }
+  nav[aria-label="Материалы курса"],
+  nav[aria-label="Переходы по курсу"] {
+    display: none;
+  }
+  h1 {
+    font-size: 18pt;
+  }
+  h2 {
+    font-size: 16pt;
+    break-after: avoid;
+  }
+  h3 {
+    font-size: 14pt;
+    break-after: avoid;
+  }
+  p {
+    margin: 0 0 6pt;
+    orphans: 3;
+    widows: 3;
+  }
+  img {
+    display: block;
+    width: 100%;
+    max-height: none;
+    margin: 0 auto;
+  }
+  figure {
+    margin: 1rem 0;
+    break-inside: avoid;
+  }
+  table,
+  pre {
+    font-size: 11pt;
+  }
+  tr,
+  pre {
+    break-inside: avoid;
+  }
+  h2 + ol,
+  h2 + ul {
+    break-inside: avoid;
+  }
+}
